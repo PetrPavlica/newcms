@@ -1,0 +1,19 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+extensions:
+	- Nepada\Bridges\AutocompleteInputDI\AutocompleteInputExtension
+
+di:
+	export:
+		parameters: no
+		tags: no

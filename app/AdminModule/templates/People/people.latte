@@ -1,0 +1,18 @@
+{* Latte template *}
+
+{block content}
+        
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#people" aria-expanded="false" aria-controls="people">
+    Přidat člověka
+  </button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#findpeople" aria-expanded="false" aria-controls="people">
+    Vyhledat člověka
+  </button>
+<div class='collapse' id="people">
+{control peopleForm}
+</div>
+<div class='collapse' id="findpeople">
+{control findPeopleForm}
+</div>
+</div>
+{control people}

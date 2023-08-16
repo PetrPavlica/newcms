@@ -1,0 +1,12 @@
+search:
+		in: %appDir%
+		classes:
+			- *Factory
+			- *Facade
+
+
+services:
+	- ISignFormFactory
+	- App\Model\PeopleModel
+	- App\Model\SignModel
+	- App\Router\RouterFactory::createRouter
